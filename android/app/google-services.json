@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "553429828021",
+    "project_id": "gfoood-dfc63",
+    "storage_bucket": "gfoood-dfc63.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:553429828021:android:5671d10908a3d15dfb99fc",
+        "android_client_info": {
+          "package_name": "com.example.gfood_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "553429828021-ohhntgj5vtr7i7f3q0u1kemfe6ckjl2h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAWPLOSAkNuwOvMt7jGwdbQupkJFuAflo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "553429828021-ohhntgj5vtr7i7f3q0u1kemfe6ckjl2h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

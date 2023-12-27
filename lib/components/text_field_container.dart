@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gfood_app/constant.dart';
+import 'package:gfood_app/components/constant.dart';
 
 class TextFieldContainer extends StatelessWidget {
   final Widget child;

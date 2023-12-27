@@ -1,30 +1,53 @@
 import 'package:flutter/material.dart';
+import 'package:gfood_app/common/styles.dart';
 import 'package:gfood_app/components/text_field_container.dart';
-import 'package:gfood_app/constant.dart';
+import 'package:gfood_app/components/constant.dart';
 
-class RoundedPasswordField extends StatelessWidget {
+class RoundedPasswordField extends StatefulWidget {
+  final TextEditingController controller;
+  final FormFieldValidator<String>? validator;
   final ValueChanged<String> onChanged;
+
   const RoundedPasswordField({
-    super.key,
+    Key? key,
+    required this.controller,
     required this.onChanged,
-  });
+    required this.validator,
+  }) : super(key: key);
+
+  @override
+  _RoundedPasswordFieldState createState() => _RoundedPasswordFieldState();
+}
+
+class _RoundedPasswordFieldState extends State<RoundedPasswordField> {
+  bool _obscureText = true;
 
   @override
   Widget build(BuildContext context) {
     return TextFieldContainer(
-      child: TextField(
-        obscureText: true,
-        onChanged: onChanged,
-        decoration: const InputDecoration(
-          hintText: "Password",
+      child: TextFormField(
+        onChanged: widget.onChanged,
+        controller: widget.controller,
+        obscureText: _obscureText,
+        validator: widget.validator,
+        decoration: InputDecoration(
           icon: Icon(
             Icons.lock,
-            color: kPrimaryColor,
+            color: black,
           ),
-          suffixIcon: Icon(
-            Icons.visibility,
-            color: kPrimaryColor,
+          suffixIcon: IconButton(
+            icon: Icon(
+              _obscureText ? Icons.visibility : Icons.visibility_off,
+              color: black,
+            ),
+            onPressed: () {
+              setState(() {
+                _obscureText = !_obscureText;
+              });
+            },
           ),
+          hintText: "Password",
+          border: InputBorder.none,
         ),
       ),
     );

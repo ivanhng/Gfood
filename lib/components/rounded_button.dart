@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:gfood_app/constant.dart';
+import 'package:gfood_app/common/styles.dart';
+import 'package:gfood_app/components/constant.dart';
 
 class RoundedButton extends StatelessWidget {
   final String text;
@@ -26,7 +27,7 @@ class RoundedButton extends StatelessWidget {
         child: TextButton(
             style: TextButton.styleFrom(
               padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
-              backgroundColor: kPrimaryColor,
+              backgroundColor: black,
               foregroundColor: Colors.white,
             ),
             onPressed: press,

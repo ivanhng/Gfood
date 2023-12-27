@@ -46,6 +46,19 @@
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<key>io.flutter.embedded_views_preview</key> 
+	<key>NSLocationWhenInUseUsageDescription</key> 
+	<string>This app needs access to location when open.</string> 
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key> 
+	<string>This app needs access to location when in the background.</string> 
+	<key>NSLocationAlwaysUsageDescription</key> 
+	<string>This app needs access to location when in the background.</string> 
+	<key>NSContactsUsageDescription</key> 
+	<string>This app needs access to contacts to show them on the map.</string> 
+	<key>NSPhotoLibraryUsageDescription</key> 
+	<string>This app needs access to photos to show them on the map.</string> 
+	<key>NSCameraUsageDescription</key> 
+	<string>This app needs access to the camera to show photos on the map.</string> 
 	<true/>
 </dict>
 </plist>
