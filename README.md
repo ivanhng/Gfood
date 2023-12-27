@@ -1,6 +1,6 @@
 # gfood_app
 
-A new Flutter project.
+A new Flutter project about Food Recommendation Application for students in the Kampar Area.
 
 ## Getting Started
 
